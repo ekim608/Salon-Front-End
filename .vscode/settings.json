@@ -1,0 +1,19 @@
+{
+   // Formatting
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode", 
+
+  // File consistency
+    "files.eol": "\n", 
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+  // JavaScript/TypeScript smarts
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // UI niceties
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Default Dark+"
+
+}
