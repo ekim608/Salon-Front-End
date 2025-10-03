@@ -1,7 +1,9 @@
+// src/data/sampleData.js
+
 export const inventorySummary = [
-  { label: "Total Items", value: 120 },
-  { label: "Low Stock", value: 8 },
-  { label: "Out of Stock", value: 3 },
+  { label: "Total Items", value: 120, color: "primary" },
+  { label: "Low Stock", value: 8, color: "warning" },
+  { label: "Out of Stock", value: 3, color: "error" },
 ];
 
 export const usageData = [
@@ -12,7 +14,34 @@ export const usageData = [
 ];
 
 export const tableData = [
-  { name: "Shampoo A", stock: 15, supplier: "Brand X" },
-  { name: "Conditioner B", stock: 3, supplier: "Brand Y" },
-  { name: "Hair Dye C", stock: 0, supplier: "Brand Z" },
+  {
+    name: "Shampoo A",
+    cost: 5,
+    retail: 10,
+    stock: 15,
+    supplier: "Brand X",
+    category: "Shampoo",
+    min: 5,
+    max: 20,
+  },
+  {
+    name: "Conditioner B",
+    cost: 6,
+    retail: 12,
+    stock: 3,
+    supplier: "Brand Y",
+    category: "Conditioner",
+    min: 5,
+    max: 20,
+  },
+  {
+    name: "Hair Dye C",
+    cost: 7,
+    retail: 14,
+    stock: 0,
+    supplier: "Brand Z",
+    category: "Color Finish",
+    min: 5,
+    max: 20,
+  },
 ];
