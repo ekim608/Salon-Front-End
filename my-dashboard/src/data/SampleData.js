@@ -6,13 +6,6 @@ export const inventorySummary = [
   { label: "Out of Stock", value: 3, color: "error" },
 ];
 
-export const usageData = [
-  { date: "2025-08-20", used: 12 },
-  { date: "2025-08-21", used: 9 },
-  { date: "2025-08-22", used: 15 },
-  { date: "2025-08-23", used: 6 },
-];
-
 export const tableData = [
   {
     name: "Shampoo A",
@@ -23,6 +16,14 @@ export const tableData = [
     category: "Shampoo",
     min: 5,
     max: 20,
+    source: "https://amazon.com/shampoo-a",
+    expectedRunOut: "2025-10-15",
+    usageHistory: [
+      { date: "2025-09-01", used: 5 },
+      { date: "2025-09-08", used: 3 },
+      { date: "2025-09-15", used: 4 },
+      { date: "2025-09-22", used: 2 },
+    ],
   },
   {
     name: "Conditioner B",
@@ -33,6 +34,14 @@ export const tableData = [
     category: "Conditioner",
     min: 5,
     max: 20,
+    source: "My Favorite Supply Store, LA",
+    expectedRunOut: "2025-10-20",
+    usageHistory: [
+      { date: "2025-10-01", used: 4 },
+      { date: "2025-10-08", used: 2 },
+      { date: "2025-10-15", used: 4 },
+      { date: "2025-10-22", used: 5 },
+    ],
   },
   {
     name: "Hair Dye C",
@@ -43,5 +52,13 @@ export const tableData = [
     category: "Color Finish",
     min: 5,
     max: 20,
+    source: "https://brandz.com/hair-dye-c",
+    expectedRunOut: "2025-10-31",
+    usageHistory: [
+      { date: "2025-09-01", used: 2 },
+      { date: "2025-09-08", used: 1 },
+      { date: "2025-09-15", used: 3 },
+      { date: "2025-09-22", used: 2 },
+    ],
   },
 ];
